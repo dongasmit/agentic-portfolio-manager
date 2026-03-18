@@ -18,7 +18,7 @@ app = FastAPI(title="Agentic Portfolio Manager API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173"], # Allow frontend
+    allow_origins=["http://localhost:3000", "https://vercel.com/patelsm72-2204s-projects/agentic-portfolio-manager/J35DumV2WJnqyWWX8U5soNnUKk6m"], # Allow frontend
     allow_credentials=True,
     allow_methods=["*"], # Allow all methods (GET, POST, etc.)
     allow_headers=["*"],
@@ -160,7 +160,7 @@ def analyze_compliance(query_data: ComplianceQuery):
         #price = float(item['last_price'])
         #current_value += qty * price
         #holdings_dict[item['tradingsymbol']] = {"qty": qty, "price": price}
-        
+
 # --- INJECT MOCK DATA FOR AI TESTING ---
     current_value = 63000.0
     holdings_dict = {
