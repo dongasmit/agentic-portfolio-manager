@@ -18,7 +18,7 @@ app = FastAPI(title="Agentic Portfolio Manager API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://vercel.com/patelsm72-2204s-projects/agentic-portfolio-manager/J35DumV2WJnqyWWX8U5soNnUKk6m"], # Allow frontend
+    allow_origins=["http://localhost:3000", "https://agentic-portfolio-manager.vercel.app"], # Allow frontend
     allow_credentials=True,
     allow_methods=["*"], # Allow all methods (GET, POST, etc.)
     allow_headers=["*"],
